@@ -1,4 +1,5 @@
 DETECÇÃO DE FRAUDES EM TRANSAÇÃO DE CARTÕES DE CRÉDITO
+
 Exercício de detecção de fraudes em cartões de crédito usando machine learning com a Prof. Isadora Ferrão
 
 <strong>Introdução </strong>
