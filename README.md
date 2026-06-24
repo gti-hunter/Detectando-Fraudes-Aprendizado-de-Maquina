@@ -9,6 +9,7 @@ O objetivo é aplicar técnicas de aprendizado de máquina para identificar tran
 <strong>Análise e Pré-processamento</strong>
 <strong>Importação de Bibliotecas</strong>
 O código começa importando as bibliotecas necessárias:
+
 <img width="639" alt="Screenshot_96" src="https://github.com/user-attachments/assets/3f0e005b-8939-47f4-9643-f74ee88b9cd1" />
 
 O dataset é carregado e informações básicas são exibidas:
@@ -20,27 +21,38 @@ O dataset é carregado e informações básicas são exibidas:
 <strong>Análise da Distribuição</strong>
 
 A distribuição das classes (fraudes vs. não fraudes) é analisada:
+
 <img width="295" alt="Screenshot_100" src="https://github.com/user-attachments/assets/5bc12a0d-b6ff-462c-aa72-b8e47bf188ae" />
+
 A análise mostra que a maioria das transações é legítima, com um pequeno número de fraudes.
 
 A coluna "Amount" mostra a "quantia" , demonstrando o pico de valor no caso de fraude:
+
 <img width="345" alt="Screenshot_101" src="https://github.com/user-attachments/assets/e9a46c6c-f412-4d25-a957-dec1c844493d" />
 
 <strong>Normalização dos Dados</strong>
 
 A coluna "Amount" é normalizada para melhorar a performance do modelo:
+
 <img width="515" alt="Screenshot_108" src="https://github.com/user-attachments/assets/47e6f3ba-def2-408d-b01b-20f1873cdf50" />
+
 <strong>Detecção de Anomalias com Isolation Forest</strong>
 
 Um modelo de Isolation Forest é utilizado para detectar fraudes.
 Isso gera uma nova coluna no DataFrame de nome IF_Pred que indica se uma transação é considerada uma fraude.
+
 <img width="828" alt="Screenshot_103" src="https://github.com/user-attachments/assets/0d628128-370a-48df-96d5-5992ada54fdc" />
+
 Visualizando valores preditos:
+
 <img width="401" alt="Screenshot_104" src="https://github.com/user-attachments/assets/d5908bf2-7ac3-4ec0-92b6-0629b49726d8" />
+
 <strong>Avaliação do Modelo</strong>
 
 A matriz de confusão é calculada para avaliar o desempenho do modelo:
+
 <img width="403" alt="Screenshot_105" src="https://github.com/user-attachments/assets/b3d2e022-8c45-4204-8178-fd49e573f9b2" />
+
 Verdadeiros Negativos (TN): 283969
 Falsos Positivos (FP): 346
 Falsos Negativos (FN): 353
@@ -49,10 +61,15 @@ Métricas de Desempenho:
 Acurácia: 1.00
 Precisão: 0.29
 Recall: 0.28
+
 <strong>Modelagem com Random Forest</strong>
+
 Um pipeline é criado para aplicar SMOTE e treinar um classificador Random Forest:
+
 <img width="582" alt="Screenshot_106" src="https://github.com/user-attachments/assets/3f2422bc-c05d-4741-a70d-c3d62fff03bf" />
+
 <strong>Validação Cruzada</strong>
+
 A validação cruzada é realizada para avaliar a robustez do modelo. Os resultados da validação cruzada mostram a média das métricas:
 Acurácia média: 1.00
 Precisão média: 0.49
