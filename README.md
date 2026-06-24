@@ -1,13 +1,18 @@
 DETECÇÃO DE FRAUDES EM TRANSAÇÃO DE CARTÕES DE CRÉDITO
 Exercício de detecção de fraudes em cartões de crédito usando machine learning com a Prof. Isadora Ferrão
+
 <strong>Introdução </strong>
 O projeto de detecção de fraudes em cartões de crédito visa identificar transações fraudulentas para proteger os consumidores e as instituições financeiras. A fraude é uma ação deliberada que causa prejuízo a terceiros, e a análise de dados é fundamental para detectar comportamentos atípicos em grandes volumes de transações.
+
 <strong>Conjunto de Dados</strong>
 O conjunto de dados utilizado contém transações de cartões de crédito realizadas em setembro de 2013 por titulares de cartões europeus. Com 284.807 transações, apenas 492 são fraudes, resultando em uma proporção de 0,172% de fraudes, o que caracteriza um problema de desbalanceamento de classes.
+
 <strong>Objetivo</strong>
 O objetivo é aplicar técnicas de aprendizado de máquina para identificar transações fraudulentas, minimizando perdas financeiras e aumentando a segurança.
+
 <strong>Análise e Pré-processamento</strong>
 <strong>Importação de Bibliotecas</strong>
+
 O código começa importando as bibliotecas necessárias:
 
 <img width="639" alt="Screenshot_96" src="https://github.com/user-attachments/assets/3f0e005b-8939-47f4-9643-f74ee88b9cd1" />
@@ -76,6 +81,7 @@ Precisão média: 0.49
 Recall médio: 0.84
 
 <strong>Conclusões</strong>
+
 <ul>
 <li>Desbalanceamento de Dados: O conjunto de dados é altamente desbalanceado, o que torna a detecção de fraudes um desafio.</li>
 <li>>Eficácia do Isolation Forest: O modelo Isolation Forest mostrou-se eficaz na identificação de fraudes, embora a precisão e o recall devam ser monitorados.</li>
@@ -85,5 +91,6 @@ Recall médio: 0.84
 <strong>Importância do Projeto</strong>
 
 A detecção de fraudes em cartões de crédito é crucial para a segurança financeira. Este projeto não só ajuda a reduzir perdas financeiras, mas também melhora a confiança dos consumidores nas instituições financeiras, promovendo um ambiente de transações mais seguro.
+
 <strong>Referência</strong>
 Os dados utilizados estão disponíveis em: Kaggle - Credit Card Fraud Detection.
